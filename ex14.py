@@ -1,8 +1,10 @@
 from sys import argv
+from datetime import date
 
 script, user_name, birth_year = argv
 prompt = '@'
-age = 2014 - int(birth_year)
+today = date.today()
+age = today.year - int(birth_year)
 
 print "Hi %s, I'm the %s script." % (user_name, script)
 print "I'd like to ask you a few questions."

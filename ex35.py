@@ -7,7 +7,7 @@ def gold_room():
         try:
             how_much = int(raw_input("> "))
             break
-        except ValueError, how_much:
+        except ValueError:
             print "Please enter an integer."
 
     if how_much < 50:

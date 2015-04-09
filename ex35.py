@@ -6,10 +6,9 @@ def gold_room():
     while True:
         try:
             how_much = int(raw_input("> "))
+            break
         except ValueError, how_much:
             print "Please enter an integer."
-        else:
-            break
 
     if how_much < 50:
         print "Nice, you're not greedy, you win!"
